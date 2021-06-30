@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidAdvancedDemos", "AndroidAdvancedDemos\AndroidAdvancedDemos.csproj", "{A890C327-D1DC-4167-8C1E-581D8AA364F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppAlerts.Android", "AppAlerts\AppAlerts.Android\AppAlerts.Android.csproj", "{AC99E38A-BCCF-4061-9034-2D7EAC48759D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppAlerts", "AppAlerts\AppAlerts\AppAlerts.csproj", "{EE2F5177-8D50-4D8D-B132-2BA7B8E1D2CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +21,16 @@ Global
 		{A890C327-D1DC-4167-8C1E-581D8AA364F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A890C327-D1DC-4167-8C1E-581D8AA364F1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A890C327-D1DC-4167-8C1E-581D8AA364F1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AC99E38A-BCCF-4061-9034-2D7EAC48759D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC99E38A-BCCF-4061-9034-2D7EAC48759D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC99E38A-BCCF-4061-9034-2D7EAC48759D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AC99E38A-BCCF-4061-9034-2D7EAC48759D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC99E38A-BCCF-4061-9034-2D7EAC48759D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC99E38A-BCCF-4061-9034-2D7EAC48759D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EE2F5177-8D50-4D8D-B132-2BA7B8E1D2CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2F5177-8D50-4D8D-B132-2BA7B8E1D2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2F5177-8D50-4D8D-B132-2BA7B8E1D2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2F5177-8D50-4D8D-B132-2BA7B8E1D2CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

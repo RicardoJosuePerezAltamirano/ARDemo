@@ -18,11 +18,11 @@ namespace AndroidAdvancedDemos
     public class MainActivity : AppCompatActivity
     {
         private ArFragment arFragment;
-        private ModelRenderable modelRenderable;
+       // private ModelRenderable modelRenderable;
         private Material readyColor;
-        private static Material failedColor;
-        private static Material foundColor;
-        private static Material savedColor;
+        //private static Material failedColor;
+        //private static Material foundColor;
+        //private static Material savedColor;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -37,25 +37,25 @@ namespace AndroidAdvancedDemos
             setUpPlane();
 
 
-            MaterialFactory.MakeOpaqueWithColor(this, new Color(Android.Graphics.Color.Red)).GetAsync().ContinueWith(materialTask => failedColor = (Material)materialTask.Result);
-            MaterialFactory.MakeOpaqueWithColor(this, new Color(Android.Graphics.Color.Green)).GetAsync().ContinueWith(materialTask => savedColor = (Material)materialTask.Result);
+            //MaterialFactory.MakeOpaqueWithColor(this, new Color(Android.Graphics.Color.Red)).GetAsync().ContinueWith(materialTask => failedColor = (Material)materialTask.Result);
+            //MaterialFactory.MakeOpaqueWithColor(this, new Color(Android.Graphics.Color.Green)).GetAsync().ContinueWith(materialTask => savedColor = (Material)materialTask.Result);
             MaterialFactory.MakeOpaqueWithColor(this, new Color(Android.Graphics.Color.Yellow)).GetAsync().ContinueWith(materialTask =>
             {
                 readyColor = (Material)materialTask.Result;
-                foundColor = readyColor;
+                //foundColor = readyColor;
             });
 
         }
 
-        private void setUpModel()
-        {
-            ModelRenderable.InvokeBuilder()
-            .SetSource(this,AndroidAdvancedDemos.Resource.Raw.wolves)
-            .Build((renderable) =>
-            {
-                this.modelRenderable = renderable;
-            });
-        }
+        //private void setUpModel()
+        //{
+        //    ModelRenderable.InvokeBuilder()
+        //    .SetSource(this,AndroidAdvancedDemos.Resource.Raw.wolves)
+        //    .Build((renderable) =>
+        //    {
+        //        this.modelRenderable = renderable;
+        //    });
+        //}
         private void setUpPlane()
         {
             arFragment.TapArPlane += (sender, args) => this.OnTapArPlaneListener(args.HitResult, args.Plane, args.MotionEvent);
